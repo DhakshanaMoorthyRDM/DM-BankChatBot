@@ -1,3 +1,4 @@
+![Screenshot 2024-06-29 191113](https://github.com/DhakshanaMoorthyRDM/DM-BankChatBot/assets/121345776/29195f13-324b-4f4a-b6ad-31cd37dd730d)
 
 # Bank Chatbot - BUDDY
 
