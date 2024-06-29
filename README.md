@@ -1,5 +1,5 @@
 
-# Bank Chatbot - DM Bot - BUDDY
+# Bank Chatbot - BUDDY
 
 BUDDY is an intelligent chatbot designed to provide informative answers to a wide range of bank-related inquiries. Leveraging advanced machine learning techniques, BUDDY is built using a custom dataset of customer questions and responses. It is fine-tuned with deep learning models (powered by PyTorch) to understand the nuances of natural language. By employing NLP methods like stemming, tokenization, and lemmatization, BUDDY can effectively process and interpret customer queries, resulting in an exceptional accuracy rate in addressing their banking needs.
 
@@ -8,17 +8,21 @@ BUDDY is an intelligent chatbot designed to provide informative answers to a wid
 To deploy this project run
 
 ```bash
-  Bank-Chatbot/
+Bank-Chatbot/
 │
-├── app.py
-├── chat.py
-├── data.pth
-├── intents.json
-├── model.py
-├── nltk_utils.py
-├── train.py
-├── trial.py
-└── requirements.txt
+├── __pycache__/          # Python bytecode cache folder
+├── templates/            # HTML templates for Flask app
+├── static/               # Static files (CSS, JS, images) for Flask app
+├── .venv/                # Virtual environment (empty)
+├── app.py                # Flask application code
+├── chat.py               # Chat interface and interactions
+├── data.pth              # Trained model parameters
+├── intents.json          # Dataset of customer questions and responses
+├── model.py              # Neural network architecture definition
+├── nltk_utils.py         # Utility functions for text processing
+├── train.py              # Script for training the model
+├── trial.py              # Script for testing and debugging
+└── requirements.txt      # Dependencies required for the project
 
 ```
 
@@ -62,21 +66,36 @@ To get started with the project, follow these steps:
 git clone https://github.com/yourusername/Bank-Chatbot.git
 cd Bank-Chatbot
 ```
+2.Create a virtual environment (optional but recommended):
 
-2.Install the required libraries:
+```bash
+python -m venv .venv
+```
+3.Activate the virtual environment:
+
+on macOS/Linux:
+```bash
+source .venv/bin/activate
+```
+on Windows:
+```bash
+.venv\Scripts\activate
+```
+
+4.Install the required libraries:
 ```bash
 pip install -r requirements.txt
 
 ```
-3.Prepare the dataset by placing your intents.json file in the project directory.
+5.Prepare the dataset by placing your intents.json file in the project directory.
 
-4.python train.py
+6.Train the model:
 
 ```bash
 python train.py
 ```
 
-5.Run the Flask application:
+7.Run the Flask application:
 
 ```bash
 export FLASK_APP=app.py
@@ -90,7 +109,7 @@ set FLASK_APP=app.py
 flask run
 ```
 
-6.Open your web browser and navigate to http://127.0.0.1:5000/ to interact with BUDDY.
+8.Open your web browser and navigate to http://127.0.0.1:5000/ to interact with BUDDY.
 
 ## Files Description
 app.py: Contains the Flask application code to run the chatbot.
